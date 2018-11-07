@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Seven\\HuaweiApi\\": "src/Seven/HuaweiApi"
+    }
+  },
+  "require": {
+    "hsp-dev/huawei-api": "dev-master",
+    "symfony/console": "^3.3"
+  }
+}
