@@ -10,10 +10,10 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
-class ModemInboxListCommand extends Command {
+class ModemInboxCommand extends Command {
 
     protected function configure() {
-        $this->setName('modem-inbox-get');
+        $this->setName('modem-inbox');
         $this->setDescription('Gets the inbox of the modem');
 
         $this->addArgument('ip', InputArgument::OPTIONAL, 'Router IP', '192.168.8.1');

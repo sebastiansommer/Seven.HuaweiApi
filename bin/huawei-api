@@ -4,11 +4,13 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use Seven\HuaweiApi\Command\GetIpCommand;
-use Seven\HuaweiApi\Command\ModemInboxListCommand;
+use Seven\HuaweiApi\Command\ModemInboxCommand;
 use Seven\HuaweiApi\Command\ModemRestartCommand;
+use Seven\HuaweiApi\Command\ModemStatusCommand;
 
 $application = new Application('Seven.HuaweiApi', '0.1-dev');
 $application->add(new GetIpCommand());
-$application->add(new ModemInboxListCommand());
+$application->add(new ModemInboxCommand());
 $application->add(new ModemRestartCommand());
+$application->add(new ModemStatusCommand());
 $application->run();
