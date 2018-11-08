@@ -6,6 +6,7 @@
   },
   "require": {
     "hsp-dev/huawei-api": "dev-master",
-    "symfony/console": "^3.3"
+    "symfony/console": "^3.3",
+    "ext-json": "*",
   }
 }
