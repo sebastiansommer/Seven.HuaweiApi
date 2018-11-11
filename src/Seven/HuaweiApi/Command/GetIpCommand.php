@@ -20,7 +20,7 @@ class GetIpCommand extends Command {
      * @return int|null|void
      */
     protected function execute(InputInterface $input, OutputInterface $output) {
-        $ip = \trim(\file_get_contents('https://ipinfo.io/ip'));
+        $ip = \trim(\file_get_contents('https://ip.7sg.site/get-ip.php'));
 
         $output->writeln($ip);
     }
